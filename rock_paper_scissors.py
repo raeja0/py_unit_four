@@ -11,7 +11,7 @@ def who_wins(user, computer):
 def main():
     print("Welcome to rock, paper, scissors!")
     print("Choose your weapon! 1 is rock, 2 is paper, 3 is scissors. Remember, no guns allowed!")
-    user = input(">>")
+    user = int(input(">>"))
     computer = random.randint(1,3)
     print(user)
     print(computer)
