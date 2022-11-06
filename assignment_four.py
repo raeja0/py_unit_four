@@ -1,14 +1,26 @@
 import random
 def addition(num1, num2):
+    '''
+    If the user selects addition
+    :param num1: First number generated
+    :param num2: Second number generated
+    :return: Tells user if their answer was correct or incorrect. Provides correct answer if user was incorrect.
+    '''
     print((num1),"+",(num2))
     addition_answer = num1 + num2
     user_response = int(input("Answer >> "))
     if user_response == addition_answer:
         return "That's correct!"
     else:
-        return "Oops... Better luck next time"
+        return "Oops... Better luck next time!"
 
 def subtraction(num1, num2):
+    '''
+    If the user selects subtraction
+    :param num1: First number generated
+    :param num2: Second number generated
+    :return: Tells user if their answer was correct or incorrect. Provides correct answer if user was incorrect.
+    '''
     print(num1, "-", num2)
     addition_answer = num1 - num2
     user_response = int(input("Answer >> "))
@@ -18,6 +30,12 @@ def subtraction(num1, num2):
         return "Oops... Better luck next time"
 
 def multiplication(num1, num2):
+    '''
+    If the user selects multiplication
+    :param num1: First number generated
+    :param num2: Second number generated
+    :return: Tells user if their answer was correct or incorrect. Provides correct answer if user was incorrect.
+    '''
     print((num1), "*", (num2))
     addition_answer = num1 * num2
     user_response = int(input("Answer >> "))
@@ -26,6 +44,13 @@ def multiplication(num1, num2):
     else:
         return "Oops... Better luck next time"
 def type(equation, num1, num2):
+    '''
+    Runs whichever function the user chooses, based on which equation they picked
+    :param equation: The user's chosen type of equation
+    :param num1: First number generated
+    :param num2: Second number generated
+    :return: Returns the equation chosen
+    '''
     if equation == "multiplication":
         print(multiplication(num1, num2))
     elif equation == "subtraction":
